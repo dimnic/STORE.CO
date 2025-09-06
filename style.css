@@ -26,4 +26,18 @@ body {
   .py-5 {
     background-color: black;
     color: white;
+
   }
+ #closedToast {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      z-index: 1055;
+      min-width: 300px;
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+    .toast-body {
+      font-weight: bold;
+      text-align: center;
+    }
