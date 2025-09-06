@@ -1,0 +1,29 @@
+body {
+    background-image: url('https://i.ibb.co/FkX88Vj1/File-Logo-of-Garena.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .card-text {
+    text-transform: capitalize;
+  }
+
+  .card {
+    transition: all 0.3s ease;
+  }
+
+  .card.hidden {
+    display: none !important;
+  }
+
+  .hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .py-5 {
+    background-color: black;
+    color: white;
+  }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRIME STORE.CO</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Prime/Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primeNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="primeNavbar">
+        <form class="d-flex ms-auto position-relative" role="search">
+          <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-dark"></i>
+          <input id="searchInput" class="form-control ps-5 me-2" type="search" placeholder="Search" />
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tabs -->
+  <div class="container mt-4">
+    <ul class="nav nav-tabs" id="primeTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#homeTab" type="button" role="tab">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sales-tab" data-bs-toggle="tab" data-bs-target="#salesTab" type="button" role="tab">Sales/info</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contactTab" type="button" role="tab">Contact</button>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-4" id="primeTabsContent">
+      <!-- Home Tab -->
+      <div class="tab-pane fade show active" id="homeTab" role="tabpanel">
+        <div class="py-5 text-center text-white">
+          <h1>Welcome to PRIME STORE.CO</h1>
+          <p class="lead">Your one-stop shop for Free Fire accounts, PvP bundles, In game topups, and exclusive discounts.</p>
+          <a href="#salesTab" class="btn btn-outline-light mt-3" data-bs-toggle="tab" inactive>Explore Sales/info</a>
+        </div>
+      </div>
+
+      <!-- Sales Tab -->
+      <div class="tab-pane fade" id="salesTab" role="tabpanel">
+        <h1 class="text-center text-dark mb-4">What We Offer</h1>
+        <div class="row" id="cardContainer">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card hover-card">
+              <img src="https://i.ibb.co/kVc6DGyx/Free-fire-logo.jpg" class="card-img-top" alt="Cheap Accounts" />
+              <div class="card-body">
+                <h5 class="card-title">Cheap Accounts</h5>
+                <p class="card-text">We provide cheap free fire accounts and give you the best you want.</p>
+                <a href="https://wa.me/2349136164617?text=Hi%20Prime%20Store.co" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card hover-card">
+              <img src="https://i.ibb.co/QjC3n6Bz/generate-a-free-fire.png" class="card-img-top" alt="PvP Accounts" />
+              <div class="card-body">
+                <h5 class="card-title">Real Time PvP Accounts</h5>
+                <p class="card-text">Accounts for content creators with PvP bundles and fist skins.</p>
+                <a href="https://wa.me/2349136164617?text=Hi%20Prime%20Store.co" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card hover-card">
+              <img src="https://i.ibb.co/6JHycZpb/Which-evo-gun-is-you.jpg" class="card-img-top" alt="Discounts" />
+              <div class="card-body">
+                <h5 class="card-title">Exclusive Discounts</h5>
+                <p class="card-text">Topups and membership deals. Buy 2 accounts and get ₦5,000 off!</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Tab -->
+      <div class="tab-pane fade" id="contactTab" role="tabpanel">
+        <section class="py-5">
+          <div class="container">
+            <h2 class="text-center fw-bold mb-5">GET INVOLVED</h2>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8 col-lg-6">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                  </div>
+                  <div class="d-grid">
+                    <a href="https://wa.me/2349136164617?text=Hi%20Prime%20Store.co" class="btn btn-light">Send Message</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <h3 class="mb-3">FOLLOW PRIME STORE.</h3>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="https://web.facebook.com/3lkrhq24wn/" class="text-dark fs-3"><i class="fab fa-facebook"></i></a>
+              
+                <a href="https://x.com/ChidinduDe49378" class="text-dark fs-3"><i class="fab fa-x"></i></a>
+                <a href="https://wa.me/2349136164617?text=Hi%20Prime%20Store.co" class="text-dark fs-3"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://discord.com/channels/@kal24_28_08" class="text-dark fs-3"><i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br><br>
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <p class="mb-0">&copy; 2023 PRIME STORE. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Search Functionality -->
+  
+
+</body>
+</html>
