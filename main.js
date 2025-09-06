@@ -6,4 +6,12 @@ document.querySelector('form[role="search"]').addEventListener('submit', functio
       const text = card.innerText.toLowerCase();
       card.classList.toggle('hidden', !text.includes(query));
     });
+
   });
+
+// Show the toast when the page loads
+  window.onload = function() {
+    const toastElement = document.getElementById('closedToast');
+    const toast = new bootstrap.Toast(toastElement);
+    toast.show();
+  };
